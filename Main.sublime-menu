@@ -1,0 +1,13 @@
+[
+    {
+        "id": "edit",
+        "children": [
+            {
+                "id": "convert_case",
+                "children": [
+                    { "command": "pokemonize", "caption": "Randomize Case" }
+                ]
+            }
+        ]
+    }
+]

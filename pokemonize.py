@@ -30,6 +30,8 @@ def pokemonize(text, intensity=1.0):
 
     :param intensity: Probability for a letter to have its case randomized
                       rather than being left as is
+
+    :return: Transformed text (as Unicode string)
     """
     if not isinstance(text, unicode):
         text = text.decode('ascii', 'ignore')
