@@ -15,9 +15,6 @@ from sublime_plugin import TextCommand
 class Pokemonize(TextCommand):
     """Class for the 'pokemonize' text command."""
 
-    def is_enabled(self):
-        return not all(region.empty() for region in self.view.sel())
-
     def run(self, edit):
         selected = (reg for reg in self.view.sel() if not reg.empty())
         for region in selected:
